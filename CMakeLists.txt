@@ -15,6 +15,14 @@ FetchContent_Declare(
     BUILD_COMMAND       ""
     
 )
+FetchContent_Declare(
+    platform
+    GIT_REPOSITORY     
+    GIT_TAG   main
+    CONFIGURE_COMMAND   ""
+    BUILD_COMMAND       ""
+    
+)
 
 
 FetchContent_GetProperties(platform)
