@@ -29,6 +29,8 @@ FetchContent_GetProperties(platform)
 if(NOT depname_POPULATED)
 
   FetchContent_Populate(platform)
+
+add_subdirectory(${platform_SOURCE_DIR} ${platform_BINARY_DIR})
 endif()
 
 FetchContent_GetProperties(platform2)
