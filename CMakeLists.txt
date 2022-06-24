@@ -30,3 +30,9 @@ if(NOT depname_POPULATED)
 
   FetchContent_Populate(platform)
 endif()
+ 
+ FetchContent_GetProperties(platform)
+if(NOT depname_POPULATED)
+
+  FetchContent_Populate(platform)
+endif()
