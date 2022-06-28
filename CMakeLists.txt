@@ -26,7 +26,7 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(platform platform2)
 
-add_executable(${PROJECT_NAME} src/Can_main.cpp)
+add_executable(${PROJECT_NAME} include/Can_main.cpp)
 
 target_link_libraries(${PROJECT_NAME} platform platform2)
 
