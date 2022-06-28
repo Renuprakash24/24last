@@ -24,18 +24,9 @@ FetchContent_Declare(
     
 )
 
+FetchContent_MakeAvailable(platform platform2)
 
-FetchContent_GetProperties(platform)
-if(NOT depname_POPULATED)
+add_executable(${PROJECT_NAME} src/Can_main.cpp)
 
-  FetchContent_Populate(platform)
+target_link_libraries(${PROJECT_NAME} platform platform2)
 
-add_subdirectory(${platform_SOURCE_DIR} ${platform_BINARY_DIR})
-endif()
-
-FetchContent_GetProperties(platform2)
-if(NOT depname_POPULATED)
-
-  FetchContent_Populate(platform2)
-endif()
- 
